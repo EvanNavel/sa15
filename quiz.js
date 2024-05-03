@@ -15,7 +15,7 @@ const quizQuestions = [
         correctAnswer: "Super Mario 3D World"
     },
     {
-        question: "What unique power does Luigi use in 'Mario & Luigi: Partners in Time'?",
+        question: "What unique power does Luigi use in the 2nd Mario and Luigi?",
         answers: ["Time Travel", "Mind Reading", "Invisibility", "Super Strength"],
         correctAnswer: "Time Travel"
     },
@@ -48,9 +48,7 @@ function loadQuestion(index) {
         const li = document.createElement('li');
         li.textContent = answer;
         li.addEventListener('click', function() {
-            // Remove 'selected' class from all answers
             document.querySelectorAll('#answers li').forEach(li => li.classList.remove('selected'));
-            // Add 'selected' class to the clicked answer
             li.classList.add('selected');
         });
         answersUl.appendChild(li);
