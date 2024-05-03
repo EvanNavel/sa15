@@ -30,6 +30,8 @@ const quizQuestions = [
         correctAnswer: "2013"
     }
 ];
+let currentQuestionIndex = 0;
+let score = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
     loadQuestion(currentQuestionIndex);
@@ -46,7 +48,9 @@ function loadQuestion(index) {
         const li = document.createElement('li');
         li.textContent = answer;
         li.addEventListener('click', function() {
+            // Remove 'selected' class from all answers
             document.querySelectorAll('#answers li').forEach(li => li.classList.remove('selected'));
+            // Add 'selected' class to the clicked answer
             li.classList.add('selected');
         });
         answersUl.appendChild(li);
@@ -79,4 +83,3 @@ function restartQuiz() {
     document.getElementById('quiz-container').style.display = 'block';
     loadQuestion(0);
 }
-
