@@ -31,9 +31,6 @@ const quizQuestions = [
     }
 ];
 
-let currentQuestionIndex = 0;
-let score = 0;
-
 document.addEventListener('DOMContentLoaded', () => {
     loadQuestion(currentQuestionIndex);
     document.getElementById('next-button').addEventListener('click', handleNextQuestion);
@@ -82,3 +79,4 @@ function restartQuiz() {
     document.getElementById('quiz-container').style.display = 'block';
     loadQuestion(0);
 }
+

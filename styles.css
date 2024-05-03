@@ -34,3 +34,23 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+#answers li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#answers li:hover {
+    background-color: #f1f1f1;
+}
+
+#answers li.selected {
+    background-color: #5c8d89;
+    color: white;
+    border-color: #417568;
+}
