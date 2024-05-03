@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f8cf;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #5c8d89;
+    color: white;
+    padding: 10px 0;
+}
+
+#answers li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#answers li:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
